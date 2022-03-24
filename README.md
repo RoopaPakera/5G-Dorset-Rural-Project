@@ -21,8 +21,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -30,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RoopaPakera/5G-Dorset-Rural-Project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/5G_logo.png" alt="Logo" width="180" height="70">
   </a>
 
 <h3 align="center">5G-Dorset-Rural-Project</h3>
@@ -84,7 +82,7 @@ Our project activities to monitor land stability and cliff movement at key point
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![5G RuralDorset][product-screenshot]](https://5gruraldorset.org/projects/coastal-cliff-monitoring/)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `RoopaPakera`, `5G-Dorset-Rural-Project`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -94,47 +92,43 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [C++](http://www.cplusplus.org/)
+* [C](https://www.learn-c.org/)
+* [Python](https://www.python.org/)
+* [AWS Cloud](https://aws.amazon.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+# Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+## Raspberry Pi 
 
-### Prerequisites
+### Raspberry Pi Imaging Utility
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Download the latest version for Windows, macOS and Ubuntu from the [Raspberry Pi downloads page](https://www.raspberrypi.com/software/).
+- To install on Raspberry Pi OS, use `sudo apt update && sudo apt install rpi-imager`.
 
-### Installation
+### Bluetooth Adapter for rpi
 
-1. Get a free API Key at [https://example.com](https://example.com)
+If you don't have a Pi 3 you will need to use a USB Bluetooth LE dongle.
+
+It's currently necessary to stop the (bluez) `bluetoothd` daemon as there is a conflict between how bleno and the a Bluez builtin GATT server overlap.
+
+ 
+```
+sudo systemctl stop bluetooth
+sudo hciconfig
+```
+
+## Installation
+
+1. Get a free Google or Amazon API Key at [https://aws.amazon.com/](https://aws.amazon.com/) or [https://console.cloud.google.com/](https://console.cloud.google.com/)
 2. Clone the repo
    ```sh
    git clone https://github.com/RoopaPakera/5G-Dorset-Rural-Project.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -194,9 +188,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## Contact of contributors
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Roopa Pakera - [LinkedIn](https://www.linkedin.com/in/roopa-pakera-0b48bb233/) - email@email_client.com  
+Vu Dang - [LinkedIn](https://www.linkedin.com/in/vudang-2b994911b/) - dangthaihaivu1997@gmail.com
 
 Project Link: [https://github.com/RoopaPakera/5G-Dorset-Rural-Project](https://github.com/RoopaPakera/5G-Dorset-Rural-Project)
 
@@ -225,8 +220,5 @@ Project Link: [https://github.com/RoopaPakera/5G-Dorset-Rural-Project](https://g
 [stars-url]: https://github.com/RoopaPakera/5G-Dorset-Rural-Project/stargazers
 [issues-shield]: https://img.shields.io/github/issues/RoopaPakera/5G-Dorset-Rural-Project.svg?style=for-the-badge
 [issues-url]: https://github.com/RoopaPakera/5G-Dorset-Rural-Project/issues
-[license-shield]: https://img.shields.io/github/license/RoopaPakera/5G-Dorset-Rural-Project.svg?style=for-the-badge
-[license-url]: https://github.com/RoopaPakera/5G-Dorset-Rural-Project/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+
+[product-screenshot]: images/Screenshot_5G_Rural.png
